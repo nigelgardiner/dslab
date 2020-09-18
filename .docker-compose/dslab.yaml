@@ -12,6 +12,8 @@ services:
         entrypoint: start-notebook.sh --NotebookApp.token=''
         networks:
             - main-network
+        ports:
+          - '8888:8888'
   
 networks:
     main-network:
